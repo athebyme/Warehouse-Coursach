@@ -256,6 +256,7 @@ namespace Warehouse {
                 std::cout << "Название склада: " << warehouse.GetName() << std::endl;
                 std::cout << "Вместимость склада: " << warehouse.GetCapacity() << std::endl;
                 std::cout << "ID склада: " << warehouse.GetId() << std::endl;
+                std::cout << "Количество товара на складе: " << warehouse.GetStock() << std::endl;
                 std::cout << "-------------------\n";
             }
         }
