@@ -4,23 +4,6 @@
 #include "Warehouse/Logic.h"
 #include <random>
 
-void test() {
-    Human human("Иван", "Иванов");
-    WarehouseWorker worker("Петр", "Петров", 2, "5678");
-    Supplier supplier("Сидор", "Сидоров", 3, "9101");
-
-    // Использование методов объектов (тестирование)
-    std::cout << "Имя: " << human.GetName() << std::endl;
-    std::cout << "Фамилия: " << human.GetSurname() << std::endl;
-
-    std::cout << "Имя работника склада: " << worker.GetName() << std::endl;
-    std::cout << "ID работника склада: " << worker.GetId() << std::endl;
-
-    std::cout << "Имя поставщика: " << supplier.GetName() << std::endl;
-    std::cout << "Уникальный идентификатор поставщика: " << supplier.GetUniqueId() << std::endl;
-}
-
-
 // проверка корректности введенных данные (не завершится, пока не будет введено число)
 void inInt(int& n, const std::string& textOut) {
     bool validInput = false;
@@ -56,7 +39,7 @@ int main() {
     // вывод русских символов в консоль
     SetConsoleOutputCP(CP_UTF8);
 
-    // Создание объекта контейнера для складов
+    // Создание объекта контейнера для складов где лежат складики
     Warehouse::WarehousesContainer warehouseContainer;
 
     int choice = -1;
